@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch via NPM",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run-script", "start:dev"],
+      "port": 9229,
+      "skipFiles": ["<node_internals>/**"],
+      "env": {
+        "PORT": "3000",
+        "MONGO_URI": "mongodb://root:123456@localhost:27017/pjcore"
+      }
+    }
+  ]
+}
